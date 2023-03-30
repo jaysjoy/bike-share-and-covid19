@@ -3,49 +3,38 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to bikeshare's documentation!
-=====================================
+Dynamics of trip clusters amid the pandemic 
+===========================================
 
-Update: 2023/03/28 
+Update: 2023/03/30 
 
-Implemented clustering models to bikeshare trips during different stages of covid 19.  
+ * Implemented clustering models to bikeshare trips during different stages of the covid 19 outbreak.
+ * Each covid period was calibrated with a clustering pipeline. The pipeline includes a component of factor analysis of mixed data (FAMA), standardization, and a DBSCAN clustering module. 
+ * FAMA is a principal component analysis technique that works well both a mixture of numerial and categorical data. Original high dimensional data was reduced to a lower dimensional space. 
+ * DBSCAN is a clustering algorithm that identifies clusters via the distance among data points. Hence, it is better to keep the dimension of input data relatively small, and this is why FAMA was introduced before applying DBSCAN. For more information on the technicalities, plese refer to :ref:`methods <methods>`.
+ * Generating other stats resulting from the cluster modeling (*ongoing*). 
 
-Animated trip clusters of different COVID stages using *plotly*, and built a web showcase repository using *sphinx* (still experimenting). 
-
-Spatial cluster heatmaps (prepandemic)
-----------------------------------------
-
-[Insert an interactive html here] 
-showing locational changes of trip clusters 
-
-.. raw:: html
-	:file: ./plots/cluster_prepan.html
-
-**pre curcuit breaker**
-
-The figures are shown below:  
-
-
-
-**curcuit breaker** 
-
-**post curcuit breaker** 
-
-
-
-
-
-
+The following are slides that keep updating. The lastest slides go first. 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Slides:
    
-   sample
+   progress/prepancluster
+   progress/precbcluster
+   progress/cbcluster
+   progress/postcbcluster
 
-Indices and tables
-==================
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Approach:
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   Approach/method
+
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
