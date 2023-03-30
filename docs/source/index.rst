@@ -6,7 +6,7 @@
 Dynamics of trip clusters amid the pandemic 
 ===========================================
 
-Update: 2023/03/30 
+Concise update and general intro: 2023/03/30 
 
  * Implemented clustering models to bikeshare trips during different stages of the covid 19 outbreak.
  * Each covid period was calibrated with a clustering pipeline. The pipeline includes a component of factor analysis of mixed data (FAMA), standardization, and a DBSCAN clustering module. 
@@ -18,14 +18,16 @@ The following are slides that keep updating. The lastest slides go first.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Slides:
-   
+   :caption: Slides
+
+   progress/tasks
    progress/prepancluster
    progress/precbcluster
    progress/cbcluster
    progress/postcbcluster
 
 .. toctree:: 
+   :hidden:
    :maxdepth: 2
    :caption: Approach:
 
