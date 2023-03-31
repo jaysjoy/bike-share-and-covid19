@@ -1,3 +1,8 @@
+[project]
+name = "bikeshare"
+authors = [{name = "Jay", email = "songjay8@gmail.com"}]
+dynamic = ["version", "description"]
+
 [project.optional-dependencies]
 doc = [
     "sphinx~=4.2.0",
